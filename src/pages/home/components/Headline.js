@@ -1,36 +1,65 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useSpring, animated } from 'react-spring';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+
+import Logo from '../../../images/logo_digital-REV.png';
 
 const Headline = () => {
   const fadeIn = useSpring({
     config: { mass: 1, tension: 280, friction: 120 },
     opacity: 1,
-    delay: 900,
+    delay: 500,
     from: { opacity: 0 }
   });
 
   const fadeInNext = useSpring({
-    config: { mass: 1, tension: 120, friction: 14 },
+    config: { mass: 3, tension: 120, friction: 14 },
     opacity: 1,
-    delay: 2000,
+    delay: 1200,
+    from: { opacity: 0 }
+  });
+
+  const fadeInLast = useSpring({
+    config: { mass: 2, tension: 120, friction: 14 },
+    opacity: 1,
+    delay: 1900,
     from: { opacity: 0 }
   });
 
   return (
-    <div className="flex flex-col self-center">
-      <div className="font-black headline-text text-white text-center my-8">
-        <animated.span style={fadeIn} className="text-blue-300 block">
-          Process Driven
-        </animated.span>
-        <animated.span style={fadeInNext}>Digital Design</animated.span>
-      </div>
-      <div className="text-center mt-10">
-        <div className="text-white font-bold text-3xl">The Work</div>
+    <div className="flex flex-col justify-between lg:h-screen">
+      <div className="flex items-center justify-between md:mr-8 md:ml-4 md:mt-8 mr-6 mt-6 ml-2 block lg:hidden">
         <div>
-          <FontAwesomeIcon icon={faArrowDown} size="2x" color="white" />
+          <img src={Logo} alt="Logo" width="100" />
         </div>
+        <div>
+          <FontAwesomeIcon icon={faBars} size="2x" color="white" />
+        </div>
+      </div>
+      <div className="flex flex-col lg:justify-center lg:h-screen">
+        <div className="text-center">
+          <animated.div
+            style={fadeInLast}
+            className="text-blue-300 font-black text-center text-xl md:text-3xl tracking-wider"
+          >
+            Process-Driven Digital Design
+          </animated.div>
+        </div>
+        <div className="font-black headline-text text-white text-center my-8">
+          <animated.span style={fadeIn} className="text-blue-300 block">
+            Tell Your
+          </animated.span>
+          <animated.span style={fadeInNext} className="text-white">
+            Company Story.
+          </animated.span>
+        </div>
+      </div>
+      <div className="flex items-center flex-col mb-6 block lg:hidden">
+        <div className="text-white font-bold text-2xl md:text-3xl">
+          Our Work.
+        </div>
+        <FontAwesomeIcon icon={faArrowDown} size="2x" color="white" />
       </div>
     </div>
   );

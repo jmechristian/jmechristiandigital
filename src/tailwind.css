@@ -5,12 +5,16 @@ html {
 }
 
 .headline-text {
-  font-size: 8rem;
-  line-height: 8.5rem;
+  font-size: 9rem;
+  line-height: 9.25rem;
 }
 
-@tailwind components;
-@tailwind utilities;
+@media (max-width: 767px) {
+  .headline-text {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
 
 .rotate-90 {
   transform: rotate(90deg);
@@ -22,5 +26,8 @@ html {
   transform: rotate(270deg);
   position: fixed;
   left: -200px;
-  bottom: 50;
+  bottom: 390px;
 }
+
+@tailwind components;
+@tailwind utilities;
