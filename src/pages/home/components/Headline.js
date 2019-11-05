@@ -21,9 +21,9 @@ const Headline = () => {
   });
 
   const fadeInLast = useSpring({
-    config: { mass: 2, tension: 120, friction: 14 },
+    config: { mass: 3, tension: 120, friction: 14 },
     opacity: 1,
-    delay: 1900,
+    delay: 2000,
     from: { opacity: 0 }
   });
 
@@ -41,7 +41,7 @@ const Headline = () => {
         <div className="text-center">
           <animated.div
             style={fadeInLast}
-            className="text-blue-300 font-black text-center text-xl md:text-3xl tracking-wider"
+            className="text-green-400 font-black text-center text-xl md:text-3xl tracking-wider"
           >
             Process-Driven Digital Design
           </animated.div>
@@ -55,12 +55,15 @@ const Headline = () => {
           </animated.span>
         </div>
       </div>
-      <div className="flex items-center flex-col mb-6 block lg:hidden">
+      <animated.div
+        style={fadeInLast}
+        className="flex items-center flex-col mb-6 block lg:hidden"
+      >
         <div className="text-white font-bold text-2xl md:text-3xl">
           Our Work.
         </div>
         <FontAwesomeIcon icon={faArrowDown} size="2x" color="white" />
-      </div>
+      </animated.div>
     </div>
   );
 };
