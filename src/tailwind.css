@@ -29,5 +29,21 @@ html {
   bottom: 390px;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+#delivery {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 10%,
+    #59c9dc 10%,
+    #59c9dc 90%,
+    #ffffff 90%,
+    #ffffff 100%
+  );
+}
+
 @tailwind components;
 @tailwind utilities;

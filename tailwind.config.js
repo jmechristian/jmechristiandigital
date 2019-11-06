@@ -1,5 +1,8 @@
 module.exports = {
   theme: {
+    container: {
+      center: true
+    },
     fontFamily: {
       display: ['Inter', 'sans-serif'],
       body: ['Inter', 'sans-serif']

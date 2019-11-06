@@ -631,8 +631,36 @@ html {
   bottom: 390px;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+#delivery {
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(#ffffff),
+    color-stop(5%, #ffffff),
+    color-stop(5%, #59c9dc),
+    color-stop(95%, #59c9dc),
+    color-stop(95%, #ffffff),
+    to(#ffffff)
+  );
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 5%,
+    #59c9dc 5%,
+    #59c9dc 95%,
+    #ffffff 95%,
+    #ffffff 100%
+  );
+}
+
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 640px) {

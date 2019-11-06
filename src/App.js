@@ -1,11 +1,15 @@
 import React from 'react';
 import Home from './pages/home/Home';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import Project from './pages/projects/Project';
 
 const App = () => {
   return (
     <Router>
-      <Home />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/project/:id" component={Project} />
+      </Switch>
     </Router>
   );
 };
