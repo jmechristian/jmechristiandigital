@@ -7,7 +7,7 @@ const SubContext = () => {
       <div>
         <img src={Logo} width="145" alt="Logo" />
       </div>
-      <div className="text-right text-green-400 font-semibold">
+      <div className="text-right text-secondary font-semibold">
         Wordpress.
         <br /> React.
         <br />

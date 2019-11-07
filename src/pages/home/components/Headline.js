@@ -41,13 +41,13 @@ const Headline = () => {
         <div className="text-center">
           <animated.div
             style={fadeInLast}
-            className="text-blue-300 font-black text-center text-xl md:text-3xl tracking-wider"
+            className="text-lowlight font-black text-center text-xl md:text-3xl tracking-wider"
           >
             Process-Driven Digital Design
           </animated.div>
         </div>
         <div className="font-black headline-text text-white text-center my-8">
-          <animated.span style={fadeIn} className="text-blue-300 block">
+          <animated.span style={fadeIn} className="text-lowlight block">
             Tell Your
           </animated.span>
           <animated.span style={fadeInNext} className="text-white">
