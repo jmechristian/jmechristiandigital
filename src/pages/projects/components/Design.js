@@ -4,8 +4,8 @@ const Design = () => {
   return (
     <section id="#proto" className="lg:px-0 px-6">
       <div className="flex flex-col container">
-        <div className="w-full mt-8 mb-12">
-          <span className=" text-3xl lg:text-4xl text-gray-500">
+        <div className="w-full lg:mt-8 mb-12">
+          <span className="text-3xl lg:text-4xl text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             cursus felis non massa feugiat, sed euismod elit egestas.
           </span>

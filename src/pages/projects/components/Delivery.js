@@ -3,10 +3,10 @@ import React from 'react';
 const Delivery = () => {
   return (
     <section id="delivery">
-      <div className="flex-col mb-4 mt-0 md:my-8">
+      <div className="flex-col mb-4 mt-0 lg:my-8">
         <div className="flex items-end justify-around container lg:px-0 px-6 pt-8">
           <div className="flex-col flex w-full md:w-5/12 mr-4 mb-0 lg:my-4">
-            <div className="font-bold text-sm uppercase tracking-widest text-white mb-4 md:mb-8">
+            <div className="font-bold text-sm uppercase tracking-widest text-white mb-4 lg:mb-8">
               03/03 Development
             </div>
             <div className="w-full">
@@ -36,7 +36,7 @@ const Delivery = () => {
             </div>
           </div>
         </div>
-        <div className="my-12 lg:px-0 px-6 lg:pt-4 justify-center flex">
+        <div className="lg:my-12 mt-8 lg:pt-4 justify-center flex">
           <img
             src="https://via.placeholder.com/1200x650"
             alt="placehold"

@@ -25,7 +25,7 @@ const Research = () => {
             faucibus augue luctus. Donec vitae consectetur mi.
           </p>
         </div>
-        <div className="lg:ml-8 mt-4">
+        <div className="lg:ml-8  mt-8 lg:mt-4">
           <img
             src="https://via.placeholder.com/700x500"
             alt="placehold"
