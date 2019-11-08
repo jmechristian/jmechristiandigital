@@ -4,13 +4,13 @@ import Logo from '../../../images/logo_digital.png';
 
 const NavBar = () => {
   return (
-    <div className="flex mt-8 mb-16 pb-8 items-center container justify-between border-b-4  border-black">
+    <div className="flex mt-8 mb-16 md:pb-8 pb-4 items-center container justify-between border-b-4 lg:px-0 px-6 border-black">
       <div>
         <Link to="/">
           <img src={Logo} alt="logo" width="100" />
         </Link>
       </div>
-      <div className="flex">
+      <div className="flex hidden md:inline-flex">
         <div>
           <span className="text-lg font-semibold mx-8">Client Portal</span>
         </div>

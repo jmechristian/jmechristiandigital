@@ -2,9 +2,9 @@ import React from 'react';
 
 const Research = () => {
   return (
-    <section id="#research">
-      <div className="flex container my-16 justify-between">
-        <div className="flex-col w-4/12 mr-8">
+    <section id="#research" className="lg:px-0 px-6">
+      <div className="flex-col lg:flex-row flex container my-16 justify-between">
+        <div className="flex-col lg:w-4/12 mr-8">
           <h1 className="font-extrabold text-5xl mb-8">Project Title</h1>
 
           <div className="font-bold text-sm uppercase tracking-widest text-gray-600 mb-4">
@@ -25,7 +25,7 @@ const Research = () => {
             faucibus augue luctus. Donec vitae consectetur mi.
           </p>
         </div>
-        <div className="ml-8">
+        <div className="lg:ml-8 mt-4">
           <img
             src="https://via.placeholder.com/700x500"
             alt="placehold"
