@@ -9,10 +9,20 @@ html {
   line-height: 9.25rem;
 }
 
+.project-number {
+  font-size: 13rem;
+  line-height: 14rem;
+}
+
 @media (max-width: 767px) {
   .headline-text {
     font-size: 4rem;
     line-height: 4.5rem;
+  }
+
+  .project-number {
+    font-size: 10rem;
+    line-height: 11rem;
   }
 }
 
