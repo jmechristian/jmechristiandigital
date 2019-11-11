@@ -13,8 +13,8 @@ const NavBar = () => {
   return (
     <>
       {open && <ModalMenu closeModal={closeModal} />}
-      <div className="flex mb-16 md:pb-8 py-4 items-center container justify-between lg:px-0 px-6">
-        <div>
+      <div className="flex pb-8 py-4 items-center container justify-between lg:px-0 px-6">
+        <div className="pt-2">
           <Link to="/">
             <img src={Logo} alt="logo" width="100" />
           </Link>
@@ -26,14 +26,18 @@ const NavBar = () => {
         </div>
         <div className="flex hidden md:inline-flex">
           <div>
-            <span className="text-lg font-semibold mx-8">Client Portal</span>
+            <span className="text-lg font-semibold mx-8">
+              <Link to="/portal">Client Portal</Link>
+            </span>
           </div>
           <div>
-            <span className="text-lg font-semibold mx-8">Projects</span>
+            <span className="text-lg font-semibold mx-8">
+              <Link to="/projects">Projects</Link>
+            </span>
           </div>
           <div>
             <span className="text-lg font-semibold mx-8 border-b-4 border-highlight">
-              Let's Build
+              <Link to="/contact">Let's Build</Link>
             </span>
           </div>
         </div>
