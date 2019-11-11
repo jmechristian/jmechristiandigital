@@ -8,7 +8,7 @@ const Form = () => {
   const [shown, setHidden] = useState('');
   const [hide, setShown] = useState('hidden');
 
-  const submitHandler = async e => {
+  const submitHandler = e => {
     e.preventDefault();
 
     const templateId = 'template_1NxG5qC5';
@@ -20,7 +20,7 @@ const Form = () => {
       message_html: message
     };
 
-    const res = await emailjs
+    emailjs
       .send(serviceId, templateId, emailBody, userId)
       .then(response => {
         console.log('Success', response.status, response.text);
