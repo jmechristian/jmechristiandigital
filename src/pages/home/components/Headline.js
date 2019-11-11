@@ -37,7 +37,7 @@ const Headline = () => {
     <>
       {open && <ModalMenu closeModal={closeModal} />}
       <div className="flex flex-col justify-between lg:h-screen">
-        <div className="flex items-center justify-between md:mr-8 md:ml-4 md:mt-8 mr-6 mt-6 ml-2 block lg:hidden">
+        <div className="flex items-center justify-between md:mr-8 md:ml-4 md:mt-8 mr-6 mt-6 ml-6 block lg:hidden">
           <div>
             <img src={Logo} alt="Logo" width="100" />
           </div>

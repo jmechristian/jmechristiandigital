@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <>
       {open && <ModalMenu closeModal={closeModal} />}
-      <div className="flex pb-8 py-4 items-center container justify-between lg:px-0 px-6">
+      <div className="flex pb-8 py-4 md:py-6 items-center container justify-between lg:px-0 px-8">
         <div className="pt-2">
           <Link to="/">
             <img src={Logo} alt="logo" width="100" />

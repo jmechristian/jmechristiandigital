@@ -8,7 +8,9 @@ const Menu = () => {
       <div className="m-16">
         <Link to="/projects">Projects</Link>
       </div>
-      <div className="m-16 border-b-4 border-highlight">Let's Build</div>
+      <div className="m-16 border-b-4 border-highlight">
+        <Link to="/contact">Let's Build</Link>
+      </div>
     </div>
   );
 };
